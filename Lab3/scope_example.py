@@ -11,8 +11,10 @@ def calculate_discounted_price(price):
 
 discount = 0.6
 price = 100.0
-price(f"Original price before function call: {price:.2f}")
+print(f"Original price before function call {price:.2f}")
 discounted_price = calculate_discounted_price(price)
 
 print(f"Original price after function call: {price:.2f}")
 print("Discount=", discount)
+
+
