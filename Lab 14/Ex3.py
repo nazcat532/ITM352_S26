@@ -14,6 +14,7 @@ trips_df = trips_df.dropna()
 trips_df = trips_df.astype({'tips': float})
 trips_df = trips_df.set_index("payment_method")
 
+
 # Sum the tips by payment type
 tips_by_payment = trips_df.groupby("payment_method").sum()
 

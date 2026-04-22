@@ -1,0 +1,12 @@
+[
+  {
+    "question": "What does LAN stand for?",
+    "options": ["Local Area Network", "Large Area Network", "Link Access Node"],
+    "answer": "Local Area Network"
+  },
+  {
+    "question": "Which protocol is used for web browsing?",
+    "options": ["HTTP", "FTP", "SMTP"],
+    "answer": "HTTP"
+  }
+]

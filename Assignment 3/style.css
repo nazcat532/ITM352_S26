@@ -1,0 +1,17 @@
+/* Custom styles for the quiz */
+#timer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dc3545; /* Red for urgency */
+}
+
+.progress {
+    height: 25px; /* Makes progress bar easier to see */
+    border-radius: 15px;
+}
+
+/* Ensure mobile buttons have enough spacing */
+.btn {
+    margin-bottom: 10px;
+    padding: 15px;
+}
