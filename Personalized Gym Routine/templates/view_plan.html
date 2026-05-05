@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Plan</h2>
+<p>Goal: {{ profile.goal }}, Body Type: {{ profile.body_type }}, Targets: {{ profile.targets|join(', ') }}</p>
+<table>
+  <tr><th>Area</th><th>Exercise</th><th>Sets</th><th>Reps</th></tr>
+  {% for p in plan %}
+  <tr>
+    <td>{{ p.area }}</td>
+    <td>{{ p.exercise }}</td>
+    <td>{{ p.sets }}</td>
+    <td>{{ p.reps }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br>
+<form action="{{ url_for('progress_chart') }}" method="get" target="_blank">
+  <label>Show progress chart for exercise:
+    <select name="exercise">
+      <option value="">All</option>
+      {% for p in plan|unique(attribute='exercise') %}
+      <option value="{{ p.exercise }}">{{ p.exercise }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <button type="submit">View Progress</button>
+</form>
+{% endblock %}

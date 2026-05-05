@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Create Profile</h2>
+<form method="post">
+  <label>Goal:
+    <select name="goal">
+      <option value="general">General/Toning</option>
+      <option value="strength">Strength</option>
+      <option value="hypertrophy">Hypertrophy</option>
+      <option value="endurance">Endurance</option>
+    </select>
+  </label><br><br>
+  <label>Body Type:
+    <select name="body_type">
+      <option value="balanced">Balanced</option>
+      <option value="ectomorph">Ectomorph</option>
+      <option value="mesomorph">Mesomorph</option>
+      <option value="endomorph">Endomorph</option>
+    </select>
+  </label><br><br>
+  <label>Targets (choose any):<br>
+    <input type="checkbox" name="targets" value="Chest"> Chest
+    <input type="checkbox" name="targets" value="Back"> Back
+    <input type="checkbox" name="targets" value="Legs"> Legs
+    <input type="checkbox" name="targets" value="Shoulders"> Shoulders
+    <input type="checkbox" name="targets" value="Arms"> Arms
+    <input type="checkbox" name="targets" value="Core"> Core
+  </label><br><br>
+  <button type="submit">Save Profile</button>
+</form>
+{% endblock %}

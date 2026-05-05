@@ -1,5 +1,16 @@
-Hello! Welcome to Personalized Gym Routine.
+Hello! Welcome to Personalized Gym Routine. 
 
+This application provides personalized workout plans based on user-specific fitness goals body types, and target muscle groups. Unlike generic plans, this app uses logic to generate routines that match your personal needs and tracks your progress over time.
+
+Install and Download: 
+Before running this application, ensure python is installed, as well as, the library
+"pip install matplotlib"
+
+Download user_profile.jso & progress.csv in the same folder
+Open terminal 
+Run the program --> python main.py
+
+HOW TO USE THE APP
 Step 1: Create your profile 
 Follow the prompt to enter your detail (Goal, Body Type, Target Areas)
 

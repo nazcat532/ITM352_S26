@@ -39,7 +39,7 @@ export default function AppLayout() {
           <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center">
             <Dumbbell className="h-5 w-5 text-primary-foreground" />
           </div>
-          <h1 className="font-heading text-xl font-bold italic tracking-tight">FitForge</h1>
+          <h1 className="font-heading text-xl font-bold italic tracking-tight">Personalized Gym Routine</h1>
         </div>
 
         <nav className="flex-1 space-y-1">
@@ -81,7 +81,7 @@ export default function AppLayout() {
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
             <Dumbbell className="h-4 w-4 text-primary-foreground" />
           </div>
-          <span className="font-heading font-bold">FitForge</span>
+          <span className="font-heading font-bold">Personalized Gym Routine</span>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

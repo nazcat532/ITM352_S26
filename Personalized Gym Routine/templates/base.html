@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>Workout App</title>
+  <style>
+    body{font-family: Arial; margin:20px;}
+    .nav a{margin-right:10px;}
+    table{border-collapse:collapse;width:100%}
+    td,th{border:1px solid #ccc;padding:8px}
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('create_profile') }}">Create Profile</a>
+    <a href="{{ url_for('view_plan') }}">View Plan</a>
+    <a href="{{ url_for('log_progress') }}">Log Progress</a>
+  </div>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <ul>
+      {% for m in messages %}
+        <li>{{ m }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  {% endwith %}
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+</html>

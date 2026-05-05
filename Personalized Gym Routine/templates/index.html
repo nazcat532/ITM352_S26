@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome</h2>
+{% if profile %}
+<p>Profile found: Goal={{ profile.goal }}, Body Type={{ profile.body_type }}, Targets={{ profile.targets|join(', ') }}</p>
+{% else %}
+<p>No profile yet. <a href="{{ url_for('create_profile') }}">Create one</a>.</p>
+{% endif %}
+{% endblock %}

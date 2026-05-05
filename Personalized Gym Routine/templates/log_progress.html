@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Log Progress</h2>
+<form method="post">
+  <label>Date: <input type="date" name="date"></label><br><br>
+  <label>Exercise:
+    <select name="exercise">
+      {% for e in exercises %}
+      <option value="{{ e }}">{{ e }}</option>
+      {% endfor %}
+    </select>
+  </label><br><br>
+  <label>Weight (kg/lb): <input name="weight" type="number" step="0.1"></label><br><br>
+  <label>Reps: <input name="reps" type="number"></label><br><br>
+  <button type="submit">Save Log</button>
+</form>
+{% endblock %}
