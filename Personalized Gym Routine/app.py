@@ -67,8 +67,13 @@ def generate_plan(profile):
 def index():
     profile = {}
     if os.path.exists(PROFILE_FILE):
-        with open(PROFILE_FILE,"r") as f:
-            profile = json.load(f)
+        try:
+            with open(PROFILE_FILE,"r") as f:
+                content = f.read().strip()
+                if content:
+                    profile = json.loads(content)
+        except (json.JSONDecodeError, IOError):
+            profile = {}
     return render_template("index.html", profile=profile)
 
 @app.route("/create_profile", methods=["GET","POST"])
@@ -89,8 +94,16 @@ def view_plan():
     if not os.path.exists(PROFILE_FILE):
         flash("No profile found. Please create one.")
         return redirect(url_for("create_profile"))
-    with open(PROFILE_FILE,"r") as f:
-        profile = json.load(f)
+    try:
+        with open(PROFILE_FILE,"r") as f:
+            content = f.read().strip()
+            if not content:
+                flash("No profile found. Please create one.")
+                return redirect(url_for("create_profile"))
+            profile = json.loads(content)
+    except json.JSONDecodeError:
+        flash("Error reading profile. Please create a new one.")
+        return redirect(url_for("create_profile"))
     plan = generate_plan(profile)
     return render_template("view_plan.html", profile=profile, plan=plan)
 
@@ -113,10 +126,15 @@ def log_progress():
     # populate exercise options from last plan if exists
     exercises = []
     if os.path.exists(PROFILE_FILE):
-        with open(PROFILE_FILE,"r") as f:
-            profile = json.load(f)
-        plan = generate_plan(profile)
-        exercises = [p["exercise"] for p in plan]
+        try:
+            with open(PROFILE_FILE,"r") as f:
+                content = f.read().strip()
+                if content:
+                    profile = json.loads(content)
+                    plan = generate_plan(profile)
+                    exercises = [p["exercise"] for p in plan]
+        except (json.JSONDecodeError, IOError):
+            pass
     return render_template("log_progress.html", exercises=exercises)
 
 @app.route("/progress_chart")
@@ -146,4 +164,4 @@ def progress_chart():
     return send_file(buf, mimetype='image/png')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
