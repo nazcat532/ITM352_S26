@@ -1,0 +1,42 @@
+{
+  "workouts": [
+    { "workout": "Barbell Squat", "type": "Legs", "goal_affinity": "Strength", "body_type": "Mesomorph", "secondary_target": "Glutes", "reps": "5", "sets": "5" },
+    { "workout": "Leg Press", "type": "Legs", "goal_affinity": "Muscle Gain", "body_type": "Ectomorph", "secondary_target": "N/A", "reps": "12", "sets": "4" },
+    { "workout": "Walking Lunges", "type": "Legs", "goal_affinity": "Weight Loss", "body_type": "Endomorph", "secondary_target": "Cardio", "reps": "20", "sets": "3" },
+    { "workout": "Calf Raises", "type": "Legs", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "N/A", "reps": "15", "sets": "4" },
+    
+    { "workout": "Bicep Curl", "type": "Arms", "goal_affinity": "Muscle Gain", "body_type": "Ectomorph", "secondary_target": "N/A", "reps": "12", "sets": "3" },
+    { "workout": "Hammer Curl", "type": "Arms", "goal_affinity": "Muscle Gain", "body_type": "Ectomorph", "secondary_target": "Forearms", "reps": "10", "sets": "3" },
+    { "workout": "Tricep Dips", "type": "Arms", "goal_affinity": "Strength", "body_type": "Any", "secondary_target": "Chest", "reps": "8", "sets": "3" },
+    { "workout": "Skull Crushers", "type": "Arms", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "N/A", "reps": "12", "sets": "3" },
+    
+    { "workout": "Bench Press", "type": "Chest", "goal_affinity": "Strength", "body_type": "Mesomorph", "secondary_target": "Arms", "reps": "5", "sets": "5" },
+    { "workout": "Chest Fly", "type": "Chest", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "N/A", "reps": "15", "sets": "3" },
+    { "workout": "Push-Ups", "type": "Chest", "goal_affinity": "Weight Loss", "body_type": "Endomorph", "secondary_target": "Core", "reps": "Max", "sets": "3" },
+    { "workout": "Incline Dumbbell Press", "type": "Chest", "goal_affinity": "Muscle Gain", "body_type": "Ectomorph", "secondary_target": "Shoulders", "reps": "10", "sets": "4" },
+    
+    { "workout": "Deadlift", "type": "Back", "goal_affinity": "Strength", "body_type": "Mesomorph", "secondary_target": "Legs", "reps": "5", "sets": "3" },
+    { "workout": "Pull-Ups", "type": "Back", "goal_affinity": "Strength", "body_type": "Ectomorph", "secondary_target": "Arms", "reps": "Max", "sets": "3" },
+    { "workout": "Lat Pulldown", "type": "Back", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "Arms", "reps": "12", "sets": "3" },
+    { "workout": "Seated Cable Row", "type": "Back", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "N/A", "reps": "12", "sets": "3" },
+    
+    { "workout": "Overhead Press", "type": "Shoulders", "goal_affinity": "Strength", "body_type": "Any", "secondary_target": "Arms", "reps": "8", "sets": "4" },
+    { "workout": "Lateral Raises", "type": "Shoulders", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "N/A", "reps": "15", "sets": "3" },
+    { "workout": "Arnold Press", "type": "Shoulders", "goal_affinity": "Muscle Gain", "body_type": "Ectomorph", "secondary_target": "Arms", "reps": "10", "sets": "3" },
+    
+    { "workout": "Hip Thrust", "type": "Glutes", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "Legs", "reps": "12", "sets": "4" },
+    { "workout": "Glute Kickbacks", "type": "Glutes", "goal_affinity": "Weight Loss", "body_type": "Endomorph", "secondary_target": "N/A", "reps": "20", "sets": "3" },
+    { "workout": "Sumo Deadlift", "type": "Glutes", "goal_affinity": "Strength", "body_type": "Mesomorph", "secondary_target": "Legs", "reps": "8", "sets": "3" },
+    
+    { "workout": "Plank", "type": "Core", "goal_affinity": "Weight Loss", "body_type": "Any", "secondary_target": "Back", "reps": "60s", "sets": "3" },
+    { "workout": "Bicycle Crunches", "type": "Core", "goal_affinity": "Weight Loss", "body_type": "Endomorph", "secondary_target": "Legs", "reps": "30", "sets": "3" },
+    { "workout": "Hanging Leg Raises", "type": "Core", "goal_affinity": "Muscle Gain", "body_type": "Any", "secondary_target": "N/A", "reps": "15", "sets": "3" },
+    
+    { "workout": "Running", "type": "Cardio", "goal_affinity": "Weight Loss", "body_type": "Endomorph", "secondary_target": "Legs", "reps": "20m", "sets": "1" },
+    { "workout": "Jump Rope", "type": "Cardio", "goal_affinity": "Weight Loss", "body_type": "Any", "secondary_target": "Full Body", "reps": "10m", "sets": "1" },
+    { "workout": "Burpees", "type": "Cardio", "goal_affinity": "Weight Loss", "body_type": "Endomorph", "secondary_target": "Full Body", "reps": "15", "sets": "3" },
+    
+    { "workout": "Kettlebell Swing", "type": "Full Body", "goal_affinity": "Strength", "body_type": "Any", "secondary_target": "Cardio", "reps": "15", "sets": "4" },
+    { "workout": "Thruster", "type": "Full Body", "goal_affinity": "Strength", "body_type": "Mesomorph", "secondary_target": "Arms", "reps": "10", "sets": "3" }
+  ]
+}
